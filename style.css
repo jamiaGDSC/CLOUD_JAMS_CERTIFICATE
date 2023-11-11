@@ -39,7 +39,6 @@ input {
   outline: none;
   border: none;
   border-bottom: 1px solid black;
-  text-transform: capitalize;
 }
 
 /* for styling the autocomplete style */
