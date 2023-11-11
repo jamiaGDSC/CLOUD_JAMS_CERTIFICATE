@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="favicon" href="favicon.ico" />
+    <!-- Primary Meta Tags -->
+    <title>Get your certificate of Google Cloud Studyjam 2023</title>
+    <meta
+      name="title"
+      content="Get your certificate of Google Cloud Study Jam"
+    />
+   
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="logo-gcjs.svg" alt="Logo" />
+
+  
+      <h3>
+        <a
+          href="https://www.linkedin.com/company/google-developer-student-club-jmi/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Google Cloud Study Jam 2023 - GDSC Jamia Millia Islamia</a
+        >
+      </h3>
+    </header>
+
+
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+      }
+
+      main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      label {
+          font-size: 18px;
+      }
+
+      input {
+          padding: 10px;
+          margin: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+
+      button {
+          background-color: #007BFF;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+
+      button:hover {
+          background-color: #0056b3;
+      }
+
+      @keyframes shrink {
+          0% {
+              transform: scale(1);
+          }
+          50% {
+              transform: scale(0.9);
+          }
+          100% {
+              transform: scale(1);
+          }
+      }
+
+      .shrink-animation {
+          animation: shrink 0.5s;
+      }
+  </style>
+</head>  
+
+
+    <main>
+      <label for="email">Your Registered Email</label>
+
+      <input
+          required
+          type="email"
+          name="email"
+          autocomplete="name"
+          placeholder="Enter Your Email"
+          id="email"
+      />
+
+      <button onclick="search()">Click Here to Download Certificate</button>
+  </main>
+  <script>
+      function downloadCertificate() {
+          // Simulate a successful download
+          const button = document.querySelector("button");
+          button.classList.add("shrink-animation");
+
+          // You can add further logic here for the actual download process
+      }
+  </script>
+
+    
+    <script>
+
+
+function search() {
+  const email = document.getElementById("email").value;
+  const jsonFile = "data.json";
+
+  fetch(jsonFile)
+    .then((response) => response.json())
+    .then((data) => {
+      let foundData = null;
+
+      for (let i = 0; i < data.length; i++) {
+        if (data[i]["Student Email"] === email ) {
+          foundData = data[i];
+          break;
+        }
+      }
+
+      if (foundData) {
+        validateData(foundData["Student Name"], foundData["Google Cloud Skills Boost Profile URL"]);
+      } else {
+        handleNotFound();
+      }
+    })
+    .catch((error) => {
+      console.error("Error loading data:", error);
+    });
+}
+
+function handleNotFound() {
+  alert("Email not found!");
+}
+
+
+      function validateData(name,url) {
+        // const capitalize = (str, lower = false) =>
+        //   (lower ? str.toLowerCase() : str).replace(
+        //     /(?:^|\s|["'([{])+\S/g,
+        //     (match) => match.toUpperCase()
+        //   );
+        // const val = capitalize(name);
+
+        //check if the text is empty or not
+        if (name.trim() !== "") {
+          generatePDF(name,url);
+        } else {
+          console.log("somthing went wrong");
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index.js"></script>
+  </body>
+  <head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: black;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            margin: 10px;
+            font-weight: normal;
+            font-family: 'Times New Roman', serif; /* Use a different font */
+            font-size: 16px;
+            transition: color 0.3s; /* Add a transition for the color property */
+        }
+    </style>
+</head>
+<body>
+    <img src="./logo.jpg">
+    </ul>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          color: black;
+          margin: 0;
+          padding: 0;
+      }
+
+      h1 {
+          font-size: 24px;
+          margin: 20px;
+      }
+
+      .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      ul {
+          list-style-type: none;
+      }
+
+      li {
+          margin: 10px;
+          font-weight: normal;
+          font-family: 'Times New Roman', serif;
+          font-size: 16px;
+          transition: color 0.3s;
+      }
+
+      .button-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 20px;
+      }
+
+      .line {
+          background-color: #ccc;
+          height: 1px;
+          width: 50%;
+          margin: 10px 0;
+      }
+
+      .signup-button {
+          background-color: #007BFF;
+          color: #fff;
+          padding: 15px 30px;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 18px;
+      }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+      <div class="line"></div>
+            <a class="signup-button" href="http://bit.ly/3ZbrF4n" target="_blank">Sign Up as an Innovator and Get Perks</a>
+
+      
+      <div class="line"></div>
+  </div>
+</body>
+</html>
