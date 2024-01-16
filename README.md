@@ -3,5 +3,5 @@
 <p></p>○ Utilized PDFLib library for PDF document creation and alteration.<br>
 ○ Added candidate’s name, date, and fetch QR code based on a GCP profile link.<br>
 ○ Implemented functionality to download the generated PDF file</p>
-<p>Try Generating a Sample Certificate by entering email "samplename@gmail.com" </p>
+<p align="center">Try Generating a Sample Certificate by entering email "samplename@gmail.com" </p>
 
